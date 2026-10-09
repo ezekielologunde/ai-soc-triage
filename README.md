@@ -23,9 +23,22 @@ Six development fixtures and eight capability/narrative checks are evaluated in 
 
 No backend, model API, SIEM credential, threat-intelligence feed, incident closure or host isolation is connected. The capability function demonstrates a boundary model; it is not server-side authorization. Anyone can edit their browser state. Do not use this demo for real incidents. The synthetic narrative-injection case tests a rule system that ignores prose, not an LLM defense.
 
+## Live homelab deployment
+
+Separate from the public demo above: a real pipeline now runs against an
+actual Wazuh SIEM in a private home lab (read-only connector, local-LLM
+triage drafting, human review queue). Built 2026-10-09. See
+[evaluation/LIVE-DEPLOYMENT.md](evaluation/LIVE-DEPLOYMENT.md) for what's
+running, what was measured (a small before/after prompt-tuning result on 20
+real alerts, explicitly scoped as not a benchmark), and why it stays
+LAN-only rather than linked live. This is the "authorized telemetry
+ingestion" and "server-side model adapter" items from the Next stage list
+below, done for real rather than planned — the independent held-out
+evaluation item is still open.
+
 ## Next stage
 
-Server-side model adapter, authenticated review API, authorized telemetry ingestion, independent labels and held-out evaluation against this baseline. Secrets must stay server-side. Data collection and metrics must be frozen before outcome claims.
+Independent labels and held-out evaluation against this baseline, for both the public demo's rules engine and the live homelab deployment's model drafts. Secrets must stay server-side. Data collection and metrics must be frozen before outcome claims.
 
 All alerts and expected labels are original synthetic examples. Documentation IP ranges are used. Original work remains unlicensed pending an author decision. Fonts are loaded from Google Fonts and the UI falls back to system sans-serif when unavailable.
 
