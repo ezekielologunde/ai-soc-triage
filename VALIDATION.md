@@ -22,3 +22,6 @@ Wazuh metadata intake: 15 unit tests pass, covering removal of free text, JSONL 
 
 Selected-evidence extension: 18 unit tests passed. Browser verified synthetic JSONL via actual file picker, selected-field replay, and downloaded export. Export checked for provenance and default priority. Real telemetry remains untested.
 
+
+Workspace restore: 21 unit tests passed. Browser file-picker test restored a synthetic Investigating case and its note through preview acceptance. Duplicate IDs, invalid evidence and spoofed priority are covered by unit tests. Restored provenance is not authenticated.
+

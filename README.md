@@ -81,3 +81,6 @@ Source-format reference: [Wazuh alert management](https://documentation.wazuh.co
 
 Selected evidence extension: opt in to protocol (TCP/UDP/ICMP), destination port, event count and batch-local host aliases before import. Other fields remain omitted. Export provenance includes SHA-256 of input bytes, time and selected fields; a hash does not establish authenticity. Public /replay.html offers synthetic examples only, without a file input. Review notes are not redacted.
 
+
+Local workspace restore: /import accepts exported case-summary JSON (2 MiB, 500 cases). Restored data is validated and previewed before queue replacement. Review notes/status survive; priority always resets to Needs investigation. Provenance is treated as self-reported. Unknown case fields are discarded; unsupported evidence is rejected. Public replay does not accept files.
+
