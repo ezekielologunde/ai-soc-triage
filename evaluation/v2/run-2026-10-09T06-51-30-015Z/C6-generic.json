@@ -1,0 +1,21 @@
+{
+  "caseId": "C6",
+  "arm": "generic",
+  "expected": "Investigate",
+  "baseline": "Investigate",
+  "output": {
+    "verdict": "Routine",
+    "summary": "No approved scan detected; insufficient evidence for proven safety.",
+    "citations": [
+      "EVENT-2"
+    ],
+    "limitations": "Missing approval record to confirm safe scanning activity.",
+    "reviewRequired": true,
+    "model": "qwen2.5:3b",
+    "source": "Local Ollama",
+    "scope": "Synthetic development fixture; unverified model assessment"
+  },
+  "error": null,
+  "raw": "{\"model\":\"qwen2.5:3b\",\"created_at\":\"2026-10-09T06:54:24.2936877Z\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"verdict\\\": \\\"Routine\\\",\\n  \\\"summary\\\": \\\"No approved scan detected; insufficient evidence for proven safety.\\\",\\n  \\\"citations\\\": [\\\"EVENT-2\\\"],\\n  \\\"limitations\\\": \\\"Missing approval record to confirm safe scanning activity.\\\"\\n}\"},\"done\":true,\"done_reason\":\"stop\",\"total_duration\":13239414500,\"load_duration\":230470000,\"prompt_eval_count\":168,\"prompt_eval_duration\":1728574000,\"eval_count\":51,\"eval_duration\":11121902000}",
+  "latencyMs": 13244
+}

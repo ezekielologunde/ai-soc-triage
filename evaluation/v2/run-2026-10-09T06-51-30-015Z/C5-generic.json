@@ -1,0 +1,10 @@
+{
+  "caseId": "C5",
+  "arm": "generic",
+  "expected": "Escalate",
+  "baseline": "Escalate",
+  "output": null,
+  "error": "Unresolved evidence citation",
+  "raw": "{\"model\":\"qwen2.5:3b\",\"created_at\":\"2026-10-09T06:53:39.4140837Z\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"verdict\\\": \\\"Routine\\\",\\n  \\\"summary\\\": \\\"15 failed logins succeeded with missing multi-factor authentication details.\\\",\\n  \\\"citations\\\": [\\n    \\\"[EVENT-1] Authentication failure sequence with missing MFA information\\\"\\n  ],\\n  \\\"limitations\\\": \\\"MFA context for the successful login is not provided, making it uncertain if additional security measures were in place.\\\"\\n}\"},\"done\":true,\"done_reason\":\"stop\",\"total_duration\":21555475800,\"load_duration\":210355500,\"prompt_eval_count\":185,\"prompt_eval_duration\":2787689000,\"eval_count\":79,\"eval_duration\":18544140000}",
+  "latencyMs": 21563
+}

@@ -1,0 +1,21 @@
+{
+  "caseId": "C1",
+  "arm": "policy",
+  "expected": "Escalate",
+  "baseline": "Escalate",
+  "output": {
+    "verdict": "Escalate",
+    "summary": "High failure rate with no MFA details, potential security risk.",
+    "citations": [
+      "EVENT-1"
+    ],
+    "limitations": "MFA context is missing, which could indicate a compromised account.",
+    "reviewRequired": true,
+    "model": "qwen2.5:3b",
+    "source": "Local Ollama",
+    "scope": "Synthetic development fixture; unverified model assessment"
+  },
+  "error": null,
+  "raw": "{\"model\":\"qwen2.5:3b\",\"created_at\":\"2026-10-09T06:52:02.6336183Z\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"verdict\\\": \\\"Escalate\\\",\\n  \\\"summary\\\": \\\"High failure rate with no MFA details, potential security risk.\\\",\\n  \\\"citations\\\": [\\\"EVENT-1\\\"],\\n  \\\"limitations\\\": \\\"MFA context is missing, which could indicate a compromised account.\\\"\\n}\"},\"done\":true,\"done_reason\":\"stop\",\"total_duration\":16809041300,\"load_duration\":184378100,\"prompt_eval_count\":272,\"prompt_eval_duration\":3684126000,\"eval_count\":59,\"eval_duration\":12888623000}",
+  "latencyMs": 16814
+}

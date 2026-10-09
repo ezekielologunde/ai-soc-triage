@@ -1,0 +1,10 @@
+{
+  "caseId": "C4",
+  "arm": "generic",
+  "expected": "Escalate",
+  "baseline": "Escalate",
+  "output": null,
+  "error": "Unresolved evidence citation",
+  "raw": "{\"model\":\"qwen2.5:3b\",\"created_at\":\"2026-10-09T06:53:17.8487474Z\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"verdict\\\": \\\"Escalate\\\",\\n  \\\"summary\\\": \\\"Execution of encoded process lacks approval documentation.\\\",\\n  \\\"citations\\\": [\\\"P04\\\"],\\n  \\\"limitations\\\": \\\"The absence of the actual approval record prevents a definitive assessment of risk.\\\"\\n}\"},\"done\":true,\"done_reason\":\"stop\",\"total_duration\":15739725700,\"load_duration\":229996900,\"prompt_eval_count\":158,\"prompt_eval_duration\":1638101000,\"eval_count\":55,\"eval_duration\":13711561000}",
+  "latencyMs": 15747
+}

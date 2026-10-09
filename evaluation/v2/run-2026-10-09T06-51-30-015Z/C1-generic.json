@@ -1,0 +1,21 @@
+{
+  "caseId": "C1",
+  "arm": "generic",
+  "expected": "Escalate",
+  "baseline": "Escalate",
+  "output": {
+    "verdict": "Investigate",
+    "summary": "Multiple failed logins succeeded with missing multi-factor authentication details.",
+    "citations": [
+      "EVENT-1"
+    ],
+    "limitations": "MFA failure reasons and user identity are unclear without additional context.",
+    "reviewRequired": true,
+    "model": "qwen2.5:3b",
+    "source": "Local Ollama",
+    "scope": "Synthetic development fixture; unverified model assessment"
+  },
+  "error": null,
+  "raw": "{\"model\":\"qwen2.5:3b\",\"created_at\":\"2026-10-09T06:51:45.818203Z\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"verdict\\\": \\\"Investigate\\\",\\n  \\\"summary\\\": \\\"Multiple failed logins succeeded with missing multi-factor authentication details.\\\",\\n  \\\"citations\\\": [\\n    \\\"EVENT-1\\\"\\n  ],\\n  \\\"limitations\\\": \\\"MFA failure reasons and user identity are unclear without additional context.\\\"\\n}\"},\"done\":true,\"done_reason\":\"stop\",\"total_duration\":15794864100,\"load_duration\":180020700,\"prompt_eval_count\":178,\"prompt_eval_duration\":2485537000,\"eval_count\":61,\"eval_duration\":13089664000}",
+  "latencyMs": 15802
+}

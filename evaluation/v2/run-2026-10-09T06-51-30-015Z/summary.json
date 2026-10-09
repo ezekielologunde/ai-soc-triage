@@ -1,0 +1,40 @@
+{
+  "generic": {
+    "n": 6,
+    "valid": 4,
+    "correct": 1,
+    "pairs": [
+      {
+        "base": "C1",
+        "perturbed": "C5",
+        "bothValid": false,
+        "sameVerdict": false
+      },
+      {
+        "base": "C2",
+        "perturbed": "C6",
+        "bothValid": true,
+        "sameVerdict": false
+      }
+    ]
+  },
+  "policy": {
+    "n": 6,
+    "valid": 4,
+    "correct": 2,
+    "pairs": [
+      {
+        "base": "C1",
+        "perturbed": "C5",
+        "bothValid": true,
+        "sameVerdict": true
+      },
+      {
+        "base": "C2",
+        "perturbed": "C6",
+        "bothValid": false,
+        "sameVerdict": false
+      }
+    ]
+  }
+}

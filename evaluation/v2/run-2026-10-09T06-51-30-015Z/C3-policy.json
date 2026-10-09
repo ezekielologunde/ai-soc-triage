@@ -1,0 +1,21 @@
+{
+  "caseId": "C3",
+  "arm": "policy",
+  "expected": "Routine",
+  "baseline": "Routine",
+  "output": {
+    "verdict": "Investigate",
+    "summary": "Single authentication failure without subsequent success or corroboration.",
+    "citations": [
+      "EVENT-3"
+    ],
+    "limitations": "Uncertainty about the cause of the single failure.",
+    "reviewRequired": true,
+    "model": "qwen2.5:3b",
+    "source": "Local Ollama",
+    "scope": "Synthetic development fixture; unverified model assessment"
+  },
+  "error": null,
+  "raw": "{\"model\":\"qwen2.5:3b\",\"created_at\":\"2026-10-09T06:52:47.0961688Z\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"verdict\\\": \\\"Investigate\\\",\\n  \\\"summary\\\": \\\"Single authentication failure without subsequent success or corroboration.\\\",\\n  \\\"citations\\\": [\\\"EVENT-3\\\"],\\n  \\\"limitations\\\": \\\"Uncertainty about the cause of the single failure.\\\"\\n}\"},\"done\":true,\"done_reason\":\"stop\",\"total_duration\":10209189700,\"load_duration\":192603400,\"prompt_eval_count\":265,\"prompt_eval_duration\":927858000,\"eval_count\":53,\"eval_duration\":9051851000}",
+  "latencyMs": 10213
+}

@@ -1,0 +1,21 @@
+{
+  "caseId": "C2",
+  "arm": "generic",
+  "expected": "Investigate",
+  "baseline": "Investigate",
+  "output": {
+    "verdict": "Investigate",
+    "summary": "Unapproved network scanning detected.",
+    "citations": [
+      "EVENT-2"
+    ],
+    "limitations": "Missing information on the source of the scan.",
+    "reviewRequired": true,
+    "model": "qwen2.5:3b",
+    "source": "Local Ollama",
+    "scope": "Synthetic development fixture; unverified model assessment"
+  },
+  "error": null,
+  "raw": "{\"model\":\"qwen2.5:3b\",\"created_at\":\"2026-10-09T06:52:26.7525187Z\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"verdict\\\": \\\"Investigate\\\",\\n  \\\"summary\\\": \\\"Unapproved network scanning detected.\\\",\\n  \\\"citations\\\": [\\\"EVENT-2\\\"],\\n  \\\"limitations\\\": \\\"Missing information on the source of the scan.\\\"\\n}\"},\"done\":true,\"done_reason\":\"stop\",\"total_duration\":11656649300,\"load_duration\":173059800,\"prompt_eval_count\":158,\"prompt_eval_duration\":1286266000,\"eval_count\":47,\"eval_duration\":10099625000}",
+  "latencyMs": 11664
+}

@@ -49,3 +49,6 @@ Run `node check-http.mjs` with the server running to check request boundaries. A
 
 See [results](evaluation/RESULTS.md). Local qwen2.5:3b matched 3/8 authored policy labels; one response was rejected for an invalid evidence citation. This is not independent real-world accuracy. The public demo remains deterministic and AI drafts remain advisory.
 
+
+[Evaluation v2](evaluation/v2/RESULTS.md) compared generic and explicit-policy prompts on the same six authored scenarios: valid policy matches were 1/6 and 2/6 respectively. Both produced 4/6 citation-valid responses. This is a small development comparison, not independent accuracy; automatic AI triage remains unsuitable.
+

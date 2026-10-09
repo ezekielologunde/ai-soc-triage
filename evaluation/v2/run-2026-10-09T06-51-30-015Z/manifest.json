@@ -1,0 +1,39 @@
+{
+  "hashes": {
+    "evaluation/v2/cases.json": "b655dc9fb27c84f5245fa016e2a111838da5cf7ddef4efd38190a18d9f6b8a92",
+    "evaluation/v2/policy.txt": "157d08cea84d4829483324f7d097d73cd252ed9d0fde7030d338f1aaa7feb90c",
+    "evaluation/v2/PROTOCOL.md": "a444be64d829022afc9d8677d1a844ecef095aea1689b12525d0ca0d964dd736",
+    "evaluation/v2/run.mjs": "58915b3fe657f0f51ba4e6af3c3f49f2d72ef06028e4e34fee2dedb6af117bab",
+    "ollama.mjs": "3bbd1d754ef2e094ef2be64dd1076726cb621d80396014e6aabd41ec4d0f2c38",
+    "dist/engine.js": "e70ca7de5c1054776d27e85b29ab76366e055f4fc8a2e2ae3d9b1442b9f66f83"
+  },
+  "models": {
+    "models": [
+      {
+        "name": "qwen2.5:3b",
+        "model": "qwen2.5:3b",
+        "modified_at": "2026-10-09T01:35:28.1382731-05:00",
+        "size": 1929912432,
+        "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen2",
+          "families": [
+            "qwen2"
+          ],
+          "parameter_size": "3.1B",
+          "quantization_level": "Q4_K_M",
+          "context_length": 32768,
+          "embedding_length": 2048
+        },
+        "capabilities": [
+          "completion",
+          "tools"
+        ]
+      }
+    ]
+  },
+  "model": "qwen2.5:3b",
+  "attempts": 1
+}
