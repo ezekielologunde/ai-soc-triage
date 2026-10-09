@@ -1,0 +1,20 @@
+{
+  "id": "E04",
+  "expected": "Routine",
+  "baseline": "Routine",
+  "output": {
+    "verdict": "Routine",
+    "summary": "Scan matches approved change record.",
+    "citations": [
+      "E04-01"
+    ],
+    "limitations": "No information on scan scope or additional security measures.",
+    "reviewRequired": true,
+    "model": "qwen2.5:3b",
+    "source": "Local Ollama",
+    "scope": "Synthetic development fixture; unverified model assessment"
+  },
+  "error": null,
+  "raw": "{\"model\":\"qwen2.5:3b\",\"created_at\":\"2026-10-09T06:46:20.5853227Z\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"verdict\\\": \\\"Routine\\\",\\n  \\\"summary\\\": \\\"Scan matches approved change record.\\\",\\n  \\\"citations\\\": [\\\"E04-01\\\"],\\n  \\\"limitations\\\": \\\"No information on scan scope or additional security measures.\\\"\\n}\"},\"done\":true,\"done_reason\":\"stop\",\"total_duration\":15466934700,\"load_duration\":333080100,\"prompt_eval_count\":173,\"prompt_eval_duration\":1956413000,\"eval_count\":50,\"eval_duration\":13093440000}",
+  "latencyMs": 15474
+}

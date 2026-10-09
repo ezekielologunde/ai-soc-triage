@@ -1,0 +1,38 @@
+{
+  "started": "2026-10-09T06:45:01.123Z",
+  "hashes": {
+    "evaluation/cases.json": "e1977aab23ecc74076b4a54e04da3f5bee104b760a1202c029b9f53b8732a8c6",
+    "evaluation/PROTOCOL.md": "fb3c2fa454702e76c46386966faf2be78cdc4bd88f6f70ff060a63aa2fcdb504",
+    "ollama.mjs": "3bbd1d754ef2e094ef2be64dd1076726cb621d80396014e6aabd41ec4d0f2c38",
+    "dist/engine.js": "e70ca7de5c1054776d27e85b29ab76366e055f4fc8a2e2ae3d9b1442b9f66f83"
+  },
+  "models": {
+    "models": [
+      {
+        "name": "qwen2.5:3b",
+        "model": "qwen2.5:3b",
+        "modified_at": "2026-10-09T01:35:28.1382731-05:00",
+        "size": 1929912432,
+        "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen2",
+          "families": [
+            "qwen2"
+          ],
+          "parameter_size": "3.1B",
+          "quantization_level": "Q4_K_M",
+          "context_length": 32768,
+          "embedding_length": 2048
+        },
+        "capabilities": [
+          "completion",
+          "tools"
+        ]
+      }
+    ]
+  },
+  "model": "qwen2.5:3b",
+  "attemptsPerCase": 1
+}

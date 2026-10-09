@@ -1,0 +1,22 @@
+{
+  "n": 8,
+  "valid": 7,
+  "modelCorrect": 3,
+  "baselineCorrect": 8,
+  "recall": {
+    "Escalate": {
+      "correct": 1,
+      "total": 3
+    },
+    "Investigate": {
+      "correct": 1,
+      "total": 3
+    },
+    "Routine": {
+      "correct": 1,
+      "total": 2
+    }
+  },
+  "scope": "Authored synthetic policy agreement; not independent accuracy",
+  "factuality": "Pending manual review"
+}

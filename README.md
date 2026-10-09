@@ -44,3 +44,8 @@ Open http://127.0.0.1:4173/ai. The local-only page generates a draft for one of 
 The adapter uses the [Ollama chat API](https://docs.ollama.com/api/chat). Expected labels are withheld from the prompt. Output must have a supported verdict, bounded summary and limitations, and evidence IDs that exist in the input. This validates structure and citation existence, not whether the reasoning is correct. No tools or response actions are exposed. Same-origin and Host checks protect the loopback endpoint; this is not an authenticated production service and must not be exposed publicly.
 
 Run `node check-http.mjs` with the server running to check request boundaries. Adapter unit tests use simulated model responses and do not measure live model quality. Use `node draft-local.mjs SOC-1042` for CLI inference with OLLAMA_MODEL set.
+
+## Frozen evaluation v1
+
+See [results](evaluation/RESULTS.md). Local qwen2.5:3b matched 3/8 authored policy labels; one response was rejected for an invalid evidence citation. This is not independent real-world accuracy. The public demo remains deterministic and AI drafts remain advisory.
+

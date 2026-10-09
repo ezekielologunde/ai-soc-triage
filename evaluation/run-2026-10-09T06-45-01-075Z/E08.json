@@ -1,0 +1,20 @@
+{
+  "id": "E08",
+  "expected": "Escalate",
+  "baseline": "Escalate",
+  "output": {
+    "verdict": "Routine",
+    "summary": "Alert involves twelve consecutive failures with unknown MFA, routine review recommended.",
+    "citations": [
+      "E08-01"
+    ],
+    "limitations": "MFA method used is not specified, potential for unauthorized access.",
+    "reviewRequired": true,
+    "model": "qwen2.5:3b",
+    "source": "Local Ollama",
+    "scope": "Synthetic development fixture; unverified model assessment"
+  },
+  "error": null,
+  "raw": "{\"model\":\"qwen2.5:3b\",\"created_at\":\"2026-10-09T06:47:24.3474475Z\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"verdict\\\": \\\"Routine\\\",\\n  \\\"summary\\\": \\\"Alert involves twelve consecutive failures with unknown MFA, routine review recommended.\\\",\\n  \\\"citations\\\": [\\\"E08-01\\\"],\\n  \\\"limitations\\\": \\\"MFA method used is not specified, potential for unauthorized access.\\\"\\n}\"},\"done\":true,\"done_reason\":\"stop\",\"total_duration\":10989743300,\"load_duration\":358518400,\"prompt_eval_count\":183,\"prompt_eval_duration\":1648586000,\"eval_count\":61,\"eval_duration\":8955015000}",
+  "latencyMs": 10998
+}
