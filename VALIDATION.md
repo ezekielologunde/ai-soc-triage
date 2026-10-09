@@ -13,3 +13,6 @@ Live smoke test on 2026-10-09: qwen2.5:3b (Q4_K_M, digest 357c53fb659c5076de1d65
 
 The second response was also rejected for invalid limitations. A subsequent request with bounded, explicitly nonempty string fields succeeded through the browser interface. Saved output: evidence/local-smoke-response.json. For SOC-1042 the model returned Investigate, while the development label and rules baseline are Escalate. This disagreement is retained; one valid output is connection evidence, not model quality evidence. No response actions occurred.
 
+
+Rules-owned review update: 11 unit tests and five HTTP checks passed. Live browser smoke test retained Escalate while Ollama suggested Investigate. Empty review export was blocked; selecting Needs further investigation and providing a note displayed export confirmation. Screenshot saved in evidence/rules-owned-review.jpg. This is workflow verification, not an independent factuality assessment.
+

@@ -52,3 +52,8 @@ See [results](evaluation/RESULTS.md). Local qwen2.5:3b matched 3/8 authored poli
 
 [Evaluation v2](evaluation/v2/RESULTS.md) compared generic and explicit-policy prompts on the same six authored scenarios: valid policy matches were 1/6 and 2/6 respectively. Both produced 4/6 citation-valid responses. This is a small development comparison, not independent accuracy; automatic AI triage remains unsuitable.
 
+
+## Rules-owned priority and factual review
+
+The local /ai interface now displays server-calculated rule priority separately from the model suggestion. Disagreements are explicit. Reviewers inspect supplied evidence, classify unsupported claims or missing evidence, and add a required note before exporting a reviewed draft. Reviews are self-reported, not independently verified. Agreement and valid citation IDs do not establish factual correctness. The public static demo is unchanged.
+
