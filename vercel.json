@@ -1,0 +1,8 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "echo 'static deploy, dist/ is pre-built and committed'",
+  "installCommand": "echo 'no install needed for the static deploy'",
+  "outputDirectory": "dist",
+  "cleanUrls": true
+}
