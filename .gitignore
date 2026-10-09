@@ -3,3 +3,11 @@ node_modules/
 .env
 .env.*
 !.env.example
+
+.vercel
+
+# Real homelab deployment source. Consolidated here for a single project
+# folder (see AGENTS.md), but never pushed to this public repo: it is a
+# live pipeline against a real SIEM and stays LAN-only, documented in
+# evaluation/LIVE-DEPLOYMENT.md rather than linked or shipped here.
+homelab-deployment/
