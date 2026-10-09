@@ -1,0 +1,13 @@
+{
+  "verdict": "Investigate",
+  "summary": "Alex.demo experienced multiple failed sign-ins followed by a successful one.",
+  "citations": [
+    "AUTH-01",
+    "AUTH-02"
+  ],
+  "limitations": "MFA context is unavailable, limiting the understanding of authentication success.",
+  "reviewRequired": true,
+  "model": "qwen2.5:3b",
+  "source": "Local Ollama",
+  "scope": "Synthetic development fixture; unverified model assessment"
+}
