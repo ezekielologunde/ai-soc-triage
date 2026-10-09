@@ -78,3 +78,6 @@ Open http://127.0.0.1:4173/import with npm start running. Supports one alert obj
 Cases default to Needs investigation, regardless of source level. Track Open, Investigating and Reviewed with a required note; export JSON case summaries. Review notes are free text and are not sanitized. Review exports before sharing. Reload clears the workspace. No real telemetry has been tested, uploaded or committed. The public static demo is unchanged.
 
 Source-format reference: [Wazuh alert management](https://documentation.wazuh.com/current/user-manual/manager/alert-management.html). Indexer search-result wrappers and CSV are not supported.
+
+Selected evidence extension: opt in to protocol (TCP/UDP/ICMP), destination port, event count and batch-local host aliases before import. Other fields remain omitted. Export provenance includes SHA-256 of input bytes, time and selected fields; a hash does not establish authenticity. Public /replay.html offers synthetic examples only, without a file input. Review notes are not redacted.
+

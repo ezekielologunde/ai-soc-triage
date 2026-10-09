@@ -19,3 +19,6 @@ Rules-owned review update: 11 unit tests and five HTTP checks passed. Live brows
 
 Wazuh metadata intake: 15 unit tests pass, covering removal of free text, JSONL support, malformed batch rejection, limits and review validation. Browser synthetic example verified preview, queue acceptance and review status. Real Wazuh files and file-picker interaction remain unverified. No automatic severity-to-disposition mapping or AI analysis of imports is implemented.
 
+
+Selected-evidence extension: 18 unit tests passed. Browser verified synthetic JSONL via actual file picker, selected-field replay, and downloaded export. Export checked for provenance and default priority. Real telemetry remains untested.
+
