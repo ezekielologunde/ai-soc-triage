@@ -70,3 +70,11 @@ See [results](evaluation/RESULTS.md). Local qwen2.5:3b matched 3/8 authored poli
 
 The local /ai interface now displays server-calculated rule priority separately from the model suggestion. Disagreements are explicit. Reviewers inspect supplied evidence, classify unsupported claims or missing evidence, and add a required note before exporting a reviewed draft. Reviews are self-reported, not independently verified. Agreement and valid citation IDs do not establish factual correctness. The public static demo is unchanged.
 
+
+## Local Wazuh metadata intake
+
+Open http://127.0.0.1:4173/import with npm start running. Supports one alert object, an array, or JSONL (1 MiB, 500 records maximum). Files are parsed in browser memory with no upload, persistence or model call. Preview before accepting; importing another file replaces the in-memory batch. Only numeric rule.id and integer rule.level (0 through 16) are retained. All other fields are omitted, including descriptions, raw logs, nested data, identity and timestamps. This intentionally sacrifices event context and is not full alert ingestion or anonymization of arbitrary retained text.
+
+Cases default to Needs investigation, regardless of source level. Track Open, Investigating and Reviewed with a required note; export JSON case summaries. Review notes are free text and are not sanitized. Review exports before sharing. Reload clears the workspace. No real telemetry has been tested, uploaded or committed. The public static demo is unchanged.
+
+Source-format reference: [Wazuh alert management](https://documentation.wazuh.com/current/user-manual/manager/alert-management.html). Indexer search-result wrappers and CSV are not supported.

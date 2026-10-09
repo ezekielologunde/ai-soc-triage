@@ -21,8 +21,10 @@ http.createServer(async(req,res)=>{
   busy=true;try{reply(200,reviewEnvelope(alert,await draftAlert(alert)));}catch(error){reply(502,{error:error.message});}finally{busy=false;}return;
  }
  if(req.method!=='GET')return reply(405,{error:'GET required'});
- let file;try{file=url.pathname==='/ai'?path.resolve('local-ai.html'):path.resolve(root,'.'+decodeURIComponent(url.pathname==='/'?'/index.html':url.pathname));}catch{return reply(400,{error:'Invalid path'});}
- if(url.pathname!=='/ai'&&!file.startsWith(root+path.sep))return reply(403,{error:'Forbidden'});
+ const localRoutes={'/ai':'local-ai.html','/import':'local-import.html','/wazuh-import.js':'wazuh-import.js'};
+ let file;try{file=Object.hasOwn(localRoutes,url.pathname)?path.resolve(localRoutes[url.pathname]):path.resolve(root,'.'+decodeURIComponent(url.pathname==='/'?'/index.html':url.pathname));}catch{return reply(400,{error:'Invalid path'});}
+ if(!Object.hasOwn(localRoutes,url.pathname)&&!file.startsWith(root+path.sep))return reply(403,{error:'Forbidden'});
  fs.readFile(file,(error,data)=>{if(error)return reply(404,{error:'Not found'});res.writeHead(200,{'Content-Type':types[path.extname(file)]||'application/octet-stream','X-Content-Type-Options':'nosniff'});res.end(data);});
 }).listen(4173,'127.0.0.1',()=>console.log('Demo: http://127.0.0.1:4173 | Local AI: http://127.0.0.1:4173/ai'));
+
 

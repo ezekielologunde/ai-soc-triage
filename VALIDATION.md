@@ -16,3 +16,6 @@ The second response was also rejected for invalid limitations. A subsequent requ
 
 Rules-owned review update: 11 unit tests and five HTTP checks passed. Live browser smoke test retained Escalate while Ollama suggested Investigate. Empty review export was blocked; selecting Needs further investigation and providing a note displayed export confirmation. Screenshot saved in evidence/rules-owned-review.jpg. This is workflow verification, not an independent factuality assessment.
 
+
+Wazuh metadata intake: 15 unit tests pass, covering removal of free text, JSONL support, malformed batch rejection, limits and review validation. Browser synthetic example verified preview, queue acceptance and review status. Real Wazuh files and file-picker interaction remain unverified. No automatic severity-to-disposition mapping or AI analysis of imports is implemented.
+

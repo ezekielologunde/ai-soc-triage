@@ -1,0 +1,6 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {importWazuh,reviewImported} from '../wazuh-import.js';
+const a={rule:{id:'5710',level:5,description:'SECRET'},agent:{name:'SECRET'},data:{nested:{token:'SECRET'}},full_log:'SECRET'};
+test('allowlist removes all free text and identifiers',()=>{const result=importWazuh(JSON.stringify(a));assert.ok(!JSON.stringify(result).includes('SECRET'));assert.equal(result[0].ruleId,'5710');assert.equal(result[0].priority,'Needs investigation');});
+test('JSONL supported, malformed batch rejected atomically',()=>{assert.equal(importWazuh(JSON.stringify(a)+'\n'+JSON.stringify(a)).length,2);assert.throws(()=>importWazuh(JSON.stringify([a,{rule:{id:'x',level:5}}])));assert.throws(()=>importWazuh('{}\nBAD'));});
+test('limits and numeric metadata are validated',()=>{for(const x of [{rule:{id:'1',level:17}},{rule:{id:'1',level:'5'}},[],Array(501).fill(a)])assert.throws(()=>importWazuh(JSON.stringify(x)));assert.throws(()=>importWazuh(' '.repeat(1048577)));});
+test('review requires note and cannot change priority',()=>{const r=importWazuh(JSON.stringify(a))[0];assert.throws(()=>reviewImported(r,'Reviewed',''));assert.throws(()=>reviewImported(r,'Closed','test'));assert.equal(reviewImported(r,'Reviewed','Investigated locally').priority,'Needs investigation');});
